@@ -1,73 +1,78 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f7f6f2">
-<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
-<script defer src="assets/site.js"></script>
-<meta name="description" content="Myles Magee studies data science and basketball analytics, asking how player interactions, spatial decisions, and team context shape value beyond the box score.">
-<meta property="og:title" content="Myles Magee — Beyond the Box Score">
-<meta property="og:description" content="A personal portfolio in basketball analytics, AI research, and the value traditional statistics miss.">
-<title>Myles Magee — Basketball Analytics & Data Science</title></head>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7f6f2" name="theme-color"/>
+<link href="assets/mark.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<script defer="" src="assets/site.js"></script>
+<meta content="Myles Magee shares his journey into data science and his vision for basketball analytics beyond the box score." name="description"/>
+<meta content="Myles Magee — Beyond the Box Score" property="og:title"/>
+<meta content="My journey into basketball analytics, and the questions about player influence, movement, and team value that I want to explore." property="og:description"/>
+<title>Myles Magee — Basketball Analytics &amp; Data Science</title></head>
 <body class="page-home"><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header" id="top">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Myles Magee home"><span class="brand-monogram">MM<span>.</span></span><span class="brand-label">Myles Magee<small>Data Science · Basketball Analytics</small></span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false"><span></span><span></span></button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="index.html#approach">Approach</a><a href="index.html#example">The example</a><a href="index.html#research">Research</a><a href="index.html#about">About</a><a class="nav-essay" href="philosophy.html">Read the essay <span aria-hidden="true">↗</span></a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a aria-label="Myles Magee home" class="brand" href="index.html"><span class="brand-monogram">MM<span>.</span></span><span class="brand-label">Myles Magee<small>Data Science · Basketball Analytics</small></span></a>
+
+<nav aria-label="Main navigation" class="site-nav" id="site-nav"><a class="nav-essay" href="philosophy.html">My insight to the game<span aria-hidden="true"> ↗</span></a></nav>
+</div>
 </header>
 <main id="main">
-  <section class="hero container" aria-labelledby="hero-title">
-    <div class="hero-copy">
-      <p class="eyebrow">Basketball analytics / Data science / Research</p>
-      <h1 id="hero-title">Beyond the<br><em>box score.</em></h1>
-      <p class="hero-lead">The numbers tell us what happened. I’m interested in the decisions, movements, and interactions that explain <strong>why it happened.</strong></p>
-      <div class="hero-actions"><a class="button-primary" href="#approach">Explore my approach <span aria-hidden="true">↘</span></a><a class="button-link" href="philosophy.html">Read the full philosophy <span aria-hidden="true">↗</span></a></div>
-    </div>
-    <figure class="hero-image"><img src="assets/images/mavericks-poster.png" alt="Blue-and-gold basketball editorial artwork showing a player shooting" fetchpriority="high"><figcaption>01 / The game beyond the highlight</figcaption></figure>
-  </section>
-
-  <section id="approach" class="section section-rule container" aria-labelledby="approach-title">
-    <div class="section-label">01 / The idea</div>
-    <div class="intro-grid">
-      <h2 id="approach-title">Basketball is a game of <span class="text-orange">connected decisions.</span></h2>
-      <div class="body-copy"><p>I see basketball as 48 minutes of <em>chaotic synchrony</em>. Every choice changes the possibilities for someone else on the floor.</p><p>A double-team can free a teammate. A rotation can create another opening. A defender's positioning can influence a shot without ever touching the ball.</p><p>The question that drives my work is simple: <strong>how can we measure the value of those connections?</strong></p><a class="inline-link" href="philosophy.html">The thinking behind this perspective <span aria-hidden="true">↗</span></a></div>
-    </div>
-  </section>
-
-  <section class="section section-soft" aria-labelledby="questions-title"><div class="container">
-    <div class="section-heading"><div><p class="section-label">02 / The questions</p><h2 id="questions-title">Three things I want<br>to understand better.</h2></div><p>These areas connect individual actions to team outcomes, and team outcomes to smarter decisions.</p></div>
-    <div class="question-list">
-      <article class="question-row"><span class="question-index">01</span><div><h3>Influence beyond the stat sheet</h3><p>How much does a player’s movement, spacing, or defensive presence change the opportunities available to teammates?</p></div><span class="question-tag">Player impact</span></article>
-      <article class="question-row"><span class="question-index">02</span><div><h3>Value depends on fit</h3><p>How does a player's contribution change with a different role, system, or group of teammates?</p></div><span class="question-tag">Context and prediction</span></article>
-      <article class="question-row"><span class="question-index">03</span><div><h3>What is that contribution worth?</h3><p>How can teams weigh projected impact against salary, roster needs, and the cost of acquiring a player?</p></div><span class="question-tag">Roster economics</span></article>
-    </div>
-  </div></section>
-
-  <section id="example" class="section container" aria-labelledby="example-title">
-    <div class="section-label">03 / A possession, unpacked</div>
-    <div class="section-heading"><div><h2 id="example-title">One action sets<br>off another.</h2></div><p>Consider a ball handler drawing a double-team. Follow the sequence to see why a single possession raises difficult questions about credit and value.</p></div>
-    <div class="example-card">
-      <div class="example-topline"><span>Illustrative half-court sequence</span><span>Concept only — not actual tracking data</span></div>
-      <div class="example-layout">
-        <div class="example-controls">
-          <p class="minor-label">Explore the sequence</p>
-          <div class="steps" role="group" aria-label="Basketball possession stages">
-            <button class="step-button active" type="button" data-step="0" aria-pressed="true"><span>01</span> Double-team</button>
-            <button class="step-button" type="button" data-step="1" aria-pressed="false"><span>02</span> Rotation</button>
-            <button class="step-button" type="button" data-step="2" aria-pressed="false"><span>03</span> Second opening</button>
-            <button class="step-button" type="button" data-step="3" aria-pressed="false"><span>04</span> Who gets credit?</button>
-          </div>
-          <div class="example-readout" aria-live="polite"><h3 id="step-title">THE DOUBLE TEAM</h3><p id="step-description">Two defenders commit to the ball handler. Somewhere else, a teammate now has more room to act.</p></div>
-        </div>
-        <div class="court-frame"><div class="court-svg-wrap"><svg aria-label="Stylized half-court diagram with five offensive players in orange and five defenders in blue, changing position through the possession" id="play-court" role="img" viewbox="0 0 620 452">
-<defs><pattern height="20" id="courtdots" patternunits="userSpaceOnUse" width="20"><circle cx="1" cy="1" fill="#7a7b75" opacity=".24" r=".7"></circle></pattern><marker id="passarrow" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3.5"><path d="M0 0 L7 3.5 L0 7 Z" fill="#f15b34"></path></marker></defs>
+<section aria-labelledby="hero-title" class="hero container">
+<div class="hero-copy">
+<p class="eyebrow">Basketball analytics / Data science / Research</p>
+<h1 id="hero-title">Beyond the<br/><em>box score.</em></h1>
+<p class="hero-lead">The box score tells us what happened. I want to understand the movements, decisions, and relationships that explain <strong>why it happened.</strong></p>
+<div class="hero-actions"><a class="button-link" href="#approach">Explore my perspective <span aria-hidden="true">↘</span></a></div>
+</div>
+<figure class="hero-image"><img alt="Blue-and-gold basketball editorial artwork showing a player shooting" fetchpriority="high" src="assets/images/mavericks-poster.png"/><figcaption>01 / The game beyond the highlight</figcaption></figure>
+</section>
+<section aria-labelledby="approach-title" class="section section-rule container" id="approach">
+<div class="section-label">01 / How I see the game</div>
+<div class="intro-grid">
+<h2 id="approach-title">The game is bigger than <span class="text-orange">the box score.</span></h2>
+<div class="body-copy"><p>To me, basketball is 48 minutes of <em>chaotic synchrony</em>. Each player affects the space, opportunities, and decisions available to everyone else on the floor.</p>
+<p>A superstar draws an extra defender. Another player finds room to move. A help defender changes the path of a possession without recording a statistic.</p>
+<p>Those connections are what fascinate me. <strong>Can we measure the impact of something that doesn't show up on the stat sheet?</strong></p>
+<a class="inline-link" href="philosophy.html">Why I see it this way <span aria-hidden="true">↗</span></a></div>
+</div>
+</section>
+<section aria-labelledby="questions-title" class="section section-soft"><div class="container">
+<div class="section-heading"><div><p class="section-label">02 / The questions</p><h2 id="questions-title">Three questions<br/>worth pursuing.</h2></div><p>These are the questions shaping the work I want to pursue. They're connected: influence changes opportunity, opportunity changes fit, and fit changes value.</p></div>
+<div class="question-list">
+<article class="question-row"><span class="question-index">01</span><div><h3>Influence beyond the stat sheet</h3><p>How much does a player’s movement, spacing, or defensive presence change the opportunities available to teammates?</p></div><span class="question-tag">Player impact</span></article>
+<article class="question-row"><span class="question-index">02</span><div><h3>Value depends on fit</h3><p>How does a player's contribution change with a different role, system, or group of teammates?</p></div><span class="question-tag">Context and prediction</span></article>
+<article class="question-row"><span class="question-index">03</span><div><h3>What is that contribution worth?</h3><p>How can teams weigh projected impact against salary, roster needs, and the cost of acquiring a player?</p></div><span class="question-tag">Roster economics</span></article>
+</div>
+</div></section><section aria-labelledby="image-story-title" class="section image-story container">
+<figure class="editorial-image image-story-art"><img alt="Layered basketball collage of a Philadelphia player across multiple moments of a possession" loading="lazy" src="assets/images/maxey-collage.png"/><figcaption>02A / The moments the box score misses</figcaption></figure>
+<div class="image-story-copy"><p class="section-label">The invisible contribution</p><h2 id="image-story-title">Not every impact has a number beside it.</h2>
+<p>Think about a defender who discourages a drive, or a teammate whose movement pulls someone out of position. The possession changes, even if the conventional stat sheet never names the player who made it happen.</p>
+<p>I'm interested in the decisions that lead to the result, not just the final result itself.</p>
+</div>
+</section>
+<section aria-labelledby="example-title" class="section container" id="example">
+<div class="section-label">03 / A possession, unpacked</div>
+<div class="section-heading"><div><h2 id="example-title">One action sets<br/>off another.</h2></div><p>Consider a ball handler drawing a double-team. Follow the sequence to see why a single possession raises difficult questions about credit and value.</p></div>
+<div class="example-card">
+<div class="example-topline"><span>Illustrative half-court sequence</span><span>Concept only — not actual tracking data</span></div>
+<div class="example-layout">
+<div class="example-controls">
+<p class="minor-label">Explore the sequence</p>
+<div aria-label="Basketball possession stages" class="steps" role="group">
+<button aria-pressed="true" class="step-button active" data-step="0" type="button"><span>01</span> Double-team</button>
+<button aria-pressed="false" class="step-button" data-step="1" type="button"><span>02</span> Rotation</button>
+<button aria-pressed="false" class="step-button" data-step="2" type="button"><span>03</span> Second opening</button>
+<button aria-pressed="false" class="step-button" data-step="3" type="button"><span>04</span> Who gets credit?</button>
+</div>
+<div aria-live="polite" class="example-readout"><h3 id="step-title">THE DOUBLE TEAM</h3><p id="step-description">Two defenders commit to the ball handler. Somewhere else, a teammate now has more room to act.</p></div>
+</div>
+<div class="court-frame"><div class="court-svg-wrap"><svg aria-label="Stylized half-court diagram with five offensive players in orange and five defenders in blue, changing position through the possession" id="play-court" role="img" viewBox="0 0 620 452">
+<defs><pattern height="20" id="courtdots" patternUnits="userSpaceOnUse" width="20"><circle cx="1" cy="1" fill="#7a7b75" opacity=".24" r=".7"></circle></pattern><marker id="passarrow" markerHeight="7" markerWidth="7" orient="auto" refx="6" refy="3.5"><path d="M0 0 L7 3.5 L0 7 Z" fill="#f15b34"></path></marker></defs>
 <rect fill="#181c20" height="452" width="620" x="0" y="0"></rect><rect fill="url(#courtdots)" height="452" width="620" x="0" y="0"></rect>
 <g class="court-lines" fill="none" stroke="#687078" stroke-width="2"><path d="M42 24 H578 V426 H42 Z"></path><path d="M228 24 V192 H392 V24"></path><path d="M228 192 A82 82 0 0 0 392 192" stroke-dasharray="7 8"></path><path d="M128 24 V111 A182 182 0 0 0 492 111 V24"></path><circle cx="310" cy="73" r="17"></circle><path d="M274 45 H346"></path><path d="M42 382 H578"></path></g>
 <g fill="none" id="play-paths" marker-end="url(#passarrow)" stroke="#f15b34" stroke-dasharray="9 7" stroke-width="3.5"><path d="M445 285 L330 240" id="play-path"></path></g>
@@ -84,42 +89,45 @@
 <g class="player defensive" data-player="d5" transform="translate(310 142)"><circle r="18"></circle><text>5</text></g>
 </g>
 </svg></div><div class="court-legend"><span><i class="legend-offense"></i> Offense</span><span><i class="legend-defense"></i> Defense</span></div></div>
-      </div>
-    </div>
-    <p class="example-note"><strong>The real question:</strong> How much of the advantage belongs to the player who drew the extra defender, the teammate who finished the play, or the decisions in between?</p>
-  </section>
-
-  <section id="research" class="section section-soft" aria-labelledby="research-title"><div class="container">
-    <div class="section-label">04 / Work & direction</div>
-    <div class="section-heading"><div><h2 id="research-title">Research, learning,<br>and what comes next.</h2></div><p>My current experience and the areas I’m developing toward are distinct. Both are part of the story.</p></div>
-    <div class="work-grid">
-      <article class="work-feature"><p class="minor-label">Selected project / AI evaluation</p><h3>HARNESS</h3><p>An independent benchmark examining sycophancy in multi-turn AI conversations across <strong>560 dialogues</strong>.</p><p class="muted-small">Research area: model evaluation and conversational behavior</p></article>
-      <div class="work-next"><p class="minor-label">Current research interests</p>
-        <div class="next-item"><h3>Spatial & temporal modeling</h3><p>Understanding how athletes and objects move through space and time.</p></div>
-        <div class="next-item"><h3>Contextual player-impact models</h3><p>Quantifying influence on teammates and predicting fit within a roster.</p></div>
-        <div class="next-item"><h3>Applied statistical learning</h3><p>Building the mathematical and programming foundation to test these ideas rigorously.</p></div>
-      </div>
-    </div>
-  </div></section>
-
-  <section id="about" class="section container about-section" aria-labelledby="about-title">
-    <div class="section-label">05 / About me</div>
-    <div class="about-grid"><div><h2 id="about-title">I'm Myles.</h2><p class="about-tagline">Student. Founder. Curious about the parts of the game we don't yet measure well.</p></div>
-      <div class="body-copy"><p>I'm pursuing a B.S. in Data Science (Advanced Data Science) at <strong>Oregon State University</strong>. I co-founded <strong>Corner League</strong>, where I began as CEO and now focus on strategic partnerships.</p><p>Corner League is building a business operating system for sports organizations. Corner League OS connects the tools organizations need to run and grow, while CornerLeague.com connects their work with fans.</p><p>That experience shaped my interest in data that goes untracked, and in the modeling needed to make it meaningful. Long term, I want to contribute to AI and machine learning research applied to professional sports.</p></div>
-    </div>
-    <div class="skills-strip"><span>Currently developing</span><p>Statistics & modeling <span aria-hidden="true">·</span> R & tidyverse <span aria-hidden="true">·</span> Machine learning <span aria-hidden="true">·</span> Applied research</p></div>
-  </section>
-
-  <section class="closing container" aria-labelledby="closing-title"><div><p class="eyebrow">The larger argument</p><h2 id="closing-title">Want to see how<br>the pieces connect?</h2><p>The full essay goes deeper into player influence, defense, contextual value, and roster decisions.</p></div><a href="philosophy.html" class="button-primary">Read my basketball philosophy <span aria-hidden="true">↗</span></a></section>
+</div>
+</div>
+<p class="example-note"><strong>The real question:</strong> How much of the advantage belongs to the player who drew the extra defender, the teammate who finished the play, or the decisions in between?</p>
+</section>
+<section aria-labelledby="vision-title" class="section section-soft vision-section" id="vision">
+<div class="container vision-grid">
+<div class="vision-copy">
+<p class="section-label">04 / My vision</p>
+<h2 id="vision-title">What if we could understand <span class="text-orange">the game in motion?</span></h2>
+<p>Basketball moves too quickly and too fluidly to be explained by a collection of isolated numbers. The real opportunity, as I see it, is in learning how each action changes what comes next.</p>
+<p>I want to explore how spatial tracking, statistics, and machine learning can help us study off-ball movement, defensive positioning, and the ways teammates influence one another.</p>
+<p>Over time, I hope to apply that understanding to a bigger challenge: <strong>predicting which players make a particular team better, and why.</strong> Not only who is talented, but who fits a system, complements a roster, and creates value relative to their cost.</p>
+<p class="vision-footnote">This is the direction I'm working toward, not a claim that I've already built these models.</p>
+</div>
+<figure class="editorial-image vision-art"><img alt="Basketball artwork emphasizing a player's movement with layered purple and blue geometry" loading="lazy" src="assets/images/tatum-motion.png"/><figcaption>04 / Movement. Space. Interaction.</figcaption></figure>
+</div>
+</section>
+<section aria-labelledby="about-title" class="section container about-section" id="about">
+<div class="section-label">05 / The journey</div>
+<div class="about-grid"><div><h2 id="about-title">Still learning. Always questioning.</h2><p class="about-tagline">My interest in basketball is becoming a way to ask better questions through data science.</p></div>
+<div class="body-copy">
+<p>I'm Myles Magee, working toward a <strong>B.S. in Data Science at Oregon State University</strong>. I also co-founded <strong>Corner League</strong>.</p>
+<p>My experience building in sports made me curious about what we don't measure, and why. I've always loved the game, but I'm increasingly interested in the work needed to understand it more deeply: mathematics, statistical reasoning, programming, and rigorous research.</p>
+<p>I'm early in that journey. My goal is to keep developing the technical foundation to test my ideas, challenge assumptions, and eventually contribute to meaningful innovation in basketball analytics.</p>
+<p>For me, this portfolio is a place to document that growth, share the questions I'm exploring, and connect with people who are thinking about where the game can go next.</p>
+</div>
+</div>
+<div class="skills-strip"><span>Currently developing</span><p>Statistics &amp; modeling <span aria-hidden="true">·</span> R &amp; tidyverse <span aria-hidden="true">·</span> Machine learning <span aria-hidden="true">·</span> Applied research</p></div>
+</section>
+<section aria-labelledby="closing-title" class="closing container"><div><p class="eyebrow">My perspective, in full</p><h2 id="closing-title">The ideas behind<br/>the journey.</h2><p>My essay takes a deeper look at player influence, defensive decisions, team fit, and the value traditional numbers can miss.</p></div><a class="button-primary" href="philosophy.html">My insight to the game <span aria-hidden="true">↗</span></a></section>
 </main><footer class="site-footer">
-  <div class="container footer-inner">
-    <div><a href="index.html" class="footer-name">Myles Magee</a><p>Data science, basketball analytics, and the questions worth asking.</p></div>
-    <nav aria-label="Social links" class="footer-links">
-      <a href="https://github.com/mylesanalytics" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-      <a href="https://www.linkedin.com/in/mylesmagee711/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-      <a href="https://medium.com/@mylesmagee" target="_blank" rel="noopener noreferrer">Medium ↗</a>
-      <a href="https://x.com/_mylesmagee" target="_blank" rel="noopener noreferrer">X ↗</a>
-    </nav>
-  </div>
-  <div class="container footer-bottom"><span>© <span data-year>2026</span> Myles Magee</span><span>Independent portfolio · Not affiliated with the NBA or its teams</span></div>
+<div class="container footer-inner">
+<div><a class="footer-name" href="index.html">Myles Magee</a><p>Exploring the game through data, questions, and perspective.</p></div>
+<nav aria-label="Social links" class="footer-links">
+<a href="https://github.com/mylesanalytics" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/mylesmagee711/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://medium.com/@mylesmagee" rel="noopener noreferrer" target="_blank">Medium ↗</a>
+<a href="https://x.com/_mylesmagee" rel="noopener noreferrer" target="_blank">X ↗</a>
+</nav>
+</div>
+<div class="container footer-bottom"><span>© <span data-year="">2026</span> Myles Magee</span><span>Independent portfolio · Not affiliated with the NBA or its teams</span></div>
 </footer></body></html>
