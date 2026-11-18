@@ -39,8 +39,8 @@ figure, h1, h2, h3, p { margin-top: 0; }
 .site-nav a:hover { color: var(--ink); }
 .site-nav .nav-essay { padding: 10px 0 10px 16px; border-left: 1px solid var(--line); color: var(--ink); }
 .site-nav .nav-essay:hover { color: var(--orange); }
-.menu-toggle { display: none; border: 0; background: transparent; padding: 12px; cursor: pointer; }
-.menu-toggle span { display: block; width: 25px; height: 2px; background: var(--ink); margin: 6px 0; }
+
+
 
 /* Type scales, spacing, and links */
 .eyebrow, .section-label, .minor-label { font: 500 11px/1.6 var(--mono); letter-spacing: .055em; color: var(--orange); }
@@ -197,7 +197,7 @@ p { color: var(--muted); }
 @media (max-width: 760px) {
   .container { width: min(100% - 36px, 1120px); }
   .header-inner { min-height: 68px; }
-  .menu-toggle { display: block; }
+
   .site-nav { position: absolute; top: 100%; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 12px 20px 20px; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 0 8px 20px rgb(0 0 0 / 5%); }
   .site-nav.open { display: flex; }
   .site-nav a, .site-nav .nav-essay { display: block; padding: 12px 4px; border-left: 0; font-size: 14px; }
@@ -257,3 +257,50 @@ p { color: var(--muted); }
   .player, .step-button, .button-primary { transition: none; }
 }
 
+
+/* Basketball vision edition: returning the photography without returning the noise */
+.site-nav { margin-left:auto; }
+.site-nav .nav-essay {
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:11px 17px;border:1px solid var(--ink);border-radius:3px;
+  font-weight:700;font-size:12px;line-height:1.4;color:var(--ink);white-space:nowrap;
+}
+.site-nav .nav-essay:hover { color:var(--paper);background:var(--ink); }
+.site-nav .nav-essay span { font-size:15px;line-height:1; }
+
+/* Art is editorial context, not a full-bleed background or text overlay */
+.editorial-image { margin:0;min-width:0; }
+.editorial-image img { display:block;width:100%;height:auto;object-fit:cover;border:5px solid var(--surface);box-shadow:0 12px 30px rgb(24 32 36 / 8%); }
+.editorial-image figcaption { font:400 10px/1.5 var(--mono);letter-spacing:.025em;color:var(--subtle);padding-top:11px; }
+.image-story { display:grid;grid-template-columns:minmax(245px,.7fr) minmax(0,1fr);align-items:center;gap:clamp(50px,7.5vw,112px);border-top:1px solid var(--line);padding-block:96px; }
+.image-story-art { max-width:350px; }
+.image-story-art img { aspect-ratio:4 / 5;object-position:center 22%; }
+.image-story-copy h2 { font-size:clamp(30px,3.4vw,43px);max-width:560px;margin-bottom:28px; }
+.image-story-copy p:not(.section-label) {font-size:17px;line-height:1.86;max-width:58ch;margin-bottom:17px; }
+.vision-grid {display:grid;grid-template-columns:minmax(0,1.16fr) minmax(250px,.7fr);gap:clamp(52px,7vw,94px);align-items:center;}
+.vision-copy h2 {max-width:700px;font-size:clamp(33px,4vw,50px);margin-bottom:29px;}
+.vision-copy p:not(.section-label) {font-size:17px;max-width:62ch;line-height:1.85;margin-bottom:20px;}
+.vision-copy strong {color:var(--ink);}
+.vision-copy .vision-footnote {font-size:13px !important;color:var(--subtle);margin-top:24px;}
+.vision-art {max-width:355px;justify-self:end;}
+.vision-art img {aspect-ratio:3 / 4;object-position:center 40%;}
+.essay-image-break {width:min(100%,430px);margin:0 0 80px 0;}
+.essay-image-break img {display:block;width:100%;max-height:510px;object-fit:cover;object-position:center 20%;border:5px solid var(--surface);}
+.essay-image-break figcaption {font:400 10px/1.6 var(--mono);color:var(--subtle);margin-top:10px;letter-spacing:.03em;}
+
+@media(max-width:760px){
+  .site-nav {display:flex;position:static;flex-direction:row;align-items:center;width:auto;gap:0;margin-left:auto;padding:0;border:0;box-shadow:none;background:transparent;}
+  .site-nav .nav-essay {padding:11px 13px;font-size:12px;border:1px solid var(--ink);}
+  .image-story {grid-template-columns:1fr;gap:34px;padding-block:65px;}
+  .image-story-art {max-width:440px;}
+  .image-story-art img {aspect-ratio:5 / 4;object-position:center 38%;}
+  .vision-grid {grid-template-columns:1fr;gap:35px;}
+  .vision-art {justify-self:start;max-width:420px;}
+  .vision-art img {aspect-ratio:5 / 4;object-position:center 37%;}
+  .essay-image-break {margin-bottom:55px;max-width:380px;}
+}
+@media(max-width:520px){
+  .brand-label {display:none;}
+  .site-nav .nav-essay {font-size:11px;padding:11px 12px;}
+  .image-story-copy p:not(.section-label),.vision-copy p:not(.section-label) {font-size:16px;}
+}
