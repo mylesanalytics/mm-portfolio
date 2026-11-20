@@ -158,6 +158,19 @@ p { color: var(--muted); }
 .footer-links a { font-size: 13px; font-weight: 600; }
 .footer-bottom { border-top: 1px solid var(--line); padding: 19px 0 24px; display: flex; justify-content: space-between; gap: 20px; color: var(--subtle); font-size: 11px; }
 
+/* Career goals: a quiet, text-first reflection with comfortable line length */
+.career-goals-grid { display: grid; grid-template-columns: minmax(210px, .67fr) minmax(0, 1.33fr); gap: clamp(42px, 6.5vw, 105px); align-items: start; }
+.career-goals-intro { max-width: 380px; }
+.career-goals-intro h2 { max-width: 410px; margin-bottom: 20px; }
+.career-goals-deck { max-width: 32ch; font-size: 16px; line-height: 1.85; }
+.career-goals-body { max-width: 710px; }
+.career-goals-body p { max-width: 70ch; color: #414b51; font-size: 16px; line-height: 1.9; margin-bottom: 19px; }
+.career-goals-source { font-size: 13px; margin-top: 8px; }
+@media (max-width: 760px) {
+  .career-goals-grid { grid-template-columns: 1fr; gap: 23px; }
+  .career-goals-deck { max-width: 60ch; }
+}
+
 /* Quiet, readable long-form essay */
 .essay-hero { padding-top: 80px; padding-bottom: 76px; border-bottom: 1px solid var(--line); }
 .back-link { font-size: 13px; font-weight: 600; color: var(--muted); }
@@ -304,3 +317,4 @@ p { color: var(--muted); }
   .site-nav .nav-essay {font-size:11px;padding:11px 12px;}
   .image-story-copy p:not(.section-label),.vision-copy p:not(.section-label) {font-size:16px;}
 }
+
